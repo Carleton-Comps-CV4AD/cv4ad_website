@@ -38,7 +38,12 @@
         <p class = "fillerText">For our project, our team used the CARLA simulator to generate an extensive dataset, which we split into training, validation, and test sets. The training and validation data were used to train our neural network and create weights for our models, which then processed the test data to produce segmentation masks and corresponding performance scores. Initially, CARLA provided a simple route featuring basic instances of vehicles and pedestrians. However, to meet the data-hungry demands of neural networks, we expanded our dataset to include diverse weather conditions—such as fog, rain, and nighttime—and collaborated with the instance segmentation and semantic segmentation teams to further augment our data with images, videos, and other data such as lidar data. This comprehensive effort resulted in the creation of over one million data files that significantly advanced our project.
         </p>
         <h3>Semantic Segmentation</h3>
-        <p class = "fillerText">filler text</p>
+        <p class = "fillerText">For our project, our team utilized semantic segmentation to analyze how different weather conditions 
+            affect the ability of autonomous vehicles to detect objects and parse their environments. 
+            Using a model adapted from MIT"S ADE20k dataset in PyTorch, our approach aimed ot benchmark performance across 4 distinct weatheer condtiions. 
+            The model utilized an HRNETV2 archetecture with a single convolution module as the decoder to maintain high resolution representations of the data.
+            The model was trained on a single NVIDIA GPU. Our approach was able to achieve a mean IOU of 0.65 on baseline data, a significant improvement over the original source code. 
+        </p>
         <h3>Instance Segmentation</h3>
         <p class = "fillerText">filler text</p>
         <h3>Measured Effects of Weather</h3>

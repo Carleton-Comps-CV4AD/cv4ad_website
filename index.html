@@ -16,7 +16,7 @@
     <div class = "titleGroup">
         <h1 class = "titles">CV4AD</h1>
         <h3 class = "subTitle">Computer Vision For Autonomous Driving</h3>
-        <h3 class = "subTitle"><a class = "returnButton2" target="_blank" rel="noopener noreferrer" href ="https://www.linkedin.com/in/li-nathaniel/">Nathaniel Li</a> &nbsp &nbsp &nbsp <a class = "returnButton2" target="_blank" rel="noopener noreferrer">Ben Zhao</a> &nbsp &nbsp &nbsp <a class = "returnButton2" target="_blank" rel="noopener noreferrer">Ethan Massade</a> &nbsp &nbsp &nbsp <a class = "returnButton2" target="_blank" rel="noopener noreferrer">Josh Meier</a> &nbsp &nbsp &nbsp <a class = "returnButton2" target="_blank" rel="noopener noreferrer" href = "https://www.linkedin.com/in/julian-tanguma-373605215/">Julian Tanguma</a> &nbsp &nbsp &nbsp <a class = "returnButton2" target="_blank" rel="noopener noreferrer" href ="https://toledod.github.io/">David Toledo</a>
+        <h3 class = "subTitle"><a class = "returnButton2" target="_blank" rel="noopener noreferrer" href ="https://www.linkedin.com/in/li-nathaniel/">Nathaniel Li</a> &nbsp &nbsp &nbsp <a class = "returnButton2" target="_blank" rel="noopener noreferrer" href="https://zehoubenzhao.com/">Ben Zhao</a> &nbsp &nbsp &nbsp <a class = "returnButton2" target="_blank" rel="noopener noreferrer">Ethan Massade</a> &nbsp &nbsp &nbsp <a class = "returnButton2" target="_blank" rel="noopener noreferrer">Josh Meier</a> &nbsp &nbsp &nbsp <a class = "returnButton2" target="_blank" rel="noopener noreferrer" href = "https://www.linkedin.com/in/julian-tanguma-373605215/">Julian Tanguma</a> &nbsp &nbsp &nbsp <a class = "returnButton2" target="_blank" rel="noopener noreferrer" href ="https://toledod.github.io/">David Toledo</a>
         </h3>
     </div>
         <div class="navbar">
@@ -28,7 +28,7 @@
                 <a href="./presentation.html">Presentation</a>
             </nav>
         </div>
-    <div class = "imageHolder">
+    <div class = "gifHolder">
         <img src="./images/gifs/video_49_clear_day.gif" alt="video of clear day simulation in CARLA">
     </div>
     <div class = "textHolder">
@@ -37,7 +37,20 @@
         <h3>Data</h3>
         <p class = "fillerText">For our project, our team used the CARLA simulator to generate an extensive dataset, which we split into training, validation, and test sets. The training and validation data were used to train our neural network and create weights for our models, which then processed the test data to produce segmentation masks and corresponding performance scores. Initially, CARLA provided a simple route featuring basic instances of vehicles and pedestrians. However, to meet the data-hungry demands of neural networks, we expanded our dataset to include diverse weather conditions—such as fog, rain, and nighttime—and collaborated with the instance segmentation and semantic segmentation teams to further augment our data with images, videos, and other data such as lidar data. This comprehensive effort resulted in the creation of over one million data files that significantly advanced our project.
         </p>
-        <h3>Semantic Segmentation</h3>
+        <h3_1>Semantic Segmentation</h3_1>
+        <figure class = "imageHolder">
+            <img src="./images/imgs/0.png" alt="semantic segmentation output clear day">
+            <figcaption>Clear Day</figcaption>
+        </figure>
+        <figure class = "imageHolder">
+            <img src="./images/imgs/0foggy.png" alt="semantic segmentation output clear day">
+            <figcaption>Foggy Day</figcaption>
+        </figure>
+        <figure class = "imageHolder">
+            <img src="./images/imgs/0night.png" alt="semantic segmentation output clear day">
+            <figcaption1>Clear Night</figcaption1>
+            <figcaption1>Semantic Segmentation Ouput (RGB, Ground Truth, Prediction)</figcaption1>
+        </figure>
         <p class = "fillerText">For our project, our team utilized semantic segmentation to analyze how different weather conditions 
             affect the ability of autonomous vehicles to detect objects and parse their environments. 
             Using a model adapted from MIT"S ADE20k dataset in PyTorch, our approach aimed ot benchmark performance across 4 distinct weatheer condtiions. 
@@ -53,7 +66,7 @@
     </div>
 </body>
 
-<div class = "imageHolder">
+<div class = "gifHolder">
    <iframe width="1200" height="600" src="https://www.youtube.com/embed/NepRPRpq_i4?si=RgdeLRZud2XCf-3z" title="CV4AD Presentation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 

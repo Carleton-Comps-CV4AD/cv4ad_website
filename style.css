@@ -104,8 +104,16 @@ figure.imageHolder figcaption1 {
     color: #000000;
     margin: 0;
     padding: 0;
+    margin-bottom: 2vw;
+    border-radius: 0;
+}
+
+figure.imageHolder figcaption2{
+    font-size: 1vw;
+    color: #000000;
+    margin: 0;
+    padding: 0;
     margin-top: .75vw;
-    margin-bottom: .75vw;
     border-radius: 0;
 }
 
@@ -134,7 +142,7 @@ figure.imageHolder figcaption1 {
     color: #000000;
     margin: 0;
     padding: 0;
-    margin-bottom: 2vw;
+    margin-bottom: .75vw;
     border-radius: 0;
 }
 

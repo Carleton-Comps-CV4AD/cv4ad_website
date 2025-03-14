@@ -59,7 +59,7 @@
             The model was trained on a single NVIDIA GPU. Our approach was able to achieve a mean IOU of 0.65 on baseline data, a significant improvement over the original source code. 
         </p>
         <h3>Instance Segmentation</h3>
-        <p class = "fillerText">filler text</p>
+        <p class = "fillerText">As an extension on the task of semantic segmenation, we also trained a video instance segmentation model on CARLA data to see how weather would affect its ability to distinguish between multiple instances of the same types of objects and keep track of them between the frames of a video. We utilized the MMDetection framework and the MaskTrackRCNN model, which is typically trained on the large YoutubeVIS2021 dataset, to accomplish this task. Our training was done on one Nvidia GPU on each of the 4 weather types. We generally saw lower performance than the original implementation, but we were able to still show the significant differences in model performance when tested on weathers that each model was not trained on.</p>
         <h3>Measured Effects of Weather</h3>
         <p class = "fillerText">filler text </p>
         <h3>Measured Mitigated Effects </h3>
